@@ -25,7 +25,7 @@ The upvalue that holds this server ID btw exists in the clients memory as soon a
 One thing to note is that yes the variable exists in memory but because it also exists inside a function it makes it easier to traceback as we can lookup that specific function inside the garbage collector
 and find what upvalue is the server ID.
 
-We use the debug library we only is provided by strong executors and get the info of each function, If the function matches the details we are looking for we then store that value into our variable
+We use the debug library which only is provided by strong executors and get the info of each function, If the function matches the details we are looking for we then store that value into our variable
 ```
 local serverId;
 local gunId;
